@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.server.*
 import java.net.URI
 
 @Component
-class PersonHandlerCoroutine(@Autowired var repository: PersonRepositoryCoroutine) {
+class PersonHandlerCoroutine(private val repository: PersonRepositoryCoroutine) {
 
     @FlowPreview
     suspend fun findAll(request: ServerRequest): ServerResponse {

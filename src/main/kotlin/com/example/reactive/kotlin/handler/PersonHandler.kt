@@ -2,6 +2,7 @@ package com.example.reactive.kotlin.handler
 
 import com.example.reactive.kotlin.model.Person
 import com.example.reactive.kotlin.repo.PersonRepository
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.server.ServerRequest
 import org.springframework.web.reactive.function.server.ServerResponse
